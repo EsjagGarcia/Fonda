@@ -19,7 +19,7 @@ $nombre=$_POST['nombre'];
 $precio=$_POST['precio'];
 $porciones=$_POST['porciones'];
 $desc=$_POST['desc'];
-$link=mysql_connect("localhost","root","root");
+$link=mysql_connect("localhost","root","opciones");
 mysql_select_db("formulario",$link);
 if($nombre&&$precio)
 {

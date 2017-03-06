@@ -1,6 +1,6 @@
 <html>
 <head><title>Agregar platillos</title>
-<form action="+mascota.php" method="POST">
+<form action="agregarplatillos.php" method="POST">
 </head>
 <body>
 <center>

@@ -1,5 +1,5 @@
 <?php
-$link=mysql_connect("localhost","root","root");
+$link=mysql_connect("localhost","root","opciones");
 mysql_select_db("formulario",$link);
 $result=mysql_query("select * from mascotas order by nombre",$link);
 echo"<html>

@@ -1,7 +1,7 @@
 <?php
-$link=mysql_connect("localhost","root","opciones");
+$link=mysql_connect("localhost","root","root");
 mysql_select_db("formulario",$link);
-$result=mysql_query("select * from mascotas order by nombre",$link);
+$result=mysql_query("select * from menu order by tipo",$link);
 echo"<html>
 <head>
 <title>Menú</title>
@@ -12,14 +12,15 @@ echo"<html>
 </ul>
 <center>
 <table width=100% id=prin>
-<th colspan=3 style=background:#f5f5f5;><font size=6 face=arial>Mascotas</font></th>";
+<th colspan=3 style=background:#f5f5f5;><font size=6 face=arial>Men򼯦ont></th>";
 while($renglon=mysql_fetch_array($result))
 {
-echo"<tr>";
-echo"<td><table width=100%><th style=background:#f5f5f5; colspan=7>".$renglon['nombre']."</th>";
+echo"<tr><td style=background:#f5f5f5;><font size=3 face=arial>".$renglon['tipo']."</font></td>";
+echo"<td style=background:#f5f5f5;><b><font size=2 face=arial>Precio</font></b></td>";
+echo"<td style=background:#f5f5f5;><b><font size=2 face=arial>Porciones</font></b></td></tr>";
 echo"<tr><td><b><font size=2 face=arial>".$renglon['nombre']."</font></b></td>";
-echo"<td><i><font size=2 face=arial>".$renglon['precio']."</font></i></td>";
-echo"<td><i><font size=2 face=arial>".$renglon['porciones']."</font></i></td>";
-echo"<td rowspan=3><font size=2 face=arial>".$renglon['desc']."</font></td>";
+echo"<td><i><font size=2 face=arial>$".$renglon['precio']."</font></i></td>";
+echo"<td><i><font size=2 face=arial>".$renglon['porciones']."</font></i></td></tr>";
+echo"<tr><td><font size=2 face=arial>".$renglon['desc']."</font></td></tr>";
 }
 ?>

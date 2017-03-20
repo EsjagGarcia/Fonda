@@ -6,189 +6,236 @@
 		<meta name="viewpiort" content="width=device-width, initial-scale=1"/>
 		
 		<title> Fonda </title>
+		<link rel="shortcut icon" href="../Sources/platillo.png" type="image/png"/>
 		
 		<link href="../Documents/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-		<link rel="shortcut icon" href="../Sources/platillo.png" type="image/png"/>
 		<link href="../Style/stylemain.css"  rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<nav class="navbar navbar-default navbar-fixed-top" role="navegation" id="top">
-					<div class="row">
-						<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1">
-							<div class="navbar-header">
-								<a class="navbar-brand"> <img alt="Logotipo del Sitio" src="../Sources/restaurant.jpg" height="75"/> </a>
-								<p class="navbar-text"> <font size="10" type="Roman"> Fonda </font> </p>
+				<!-- Encabezado de la página con el nombre de la empreza y el logotipo -->
+					<nav class="navbar navbar-default navbar-fixed-top" role="navegation" id="top">
+						<div class="row">
+							<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1">
+								<div class="navbar-header">
+									<a class="navbar-brand"> <img alt="Logotipo del Sitio" src="../Sources/restaurant.jpg" height="75"/> </a>
+									<p class="navbar-text"> <font size="10" type="Roman"> Fonda </font> </p>
+								</div>
 							</div>	
-						</div>	
-						<div class="col-lg-4 col-lg-offset-2 col-md-4 col-sm-4">
-							<div class="collapse navbar-collapse" id="navegacion">
-								<button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#iniciar"> Iniciar Sesión <span class="glyphicon glyphicon-user" aria-hidden="true"> </span> </button>
-								<button type="button" class="btn btn-secudary navbar-btn" data-toggle="modal" data-target="#registrar"> Registrarse </button>
+							<div class="col-lg-4 col-lg-offset-2 col-md-4 col-sm-4">
+								<div class="collapse navbar-collapse" id="navegacion">
+									<button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#iniciar"> Iniciar Sesión <span class="glyphicon glyphicon-user" aria-hidden="true"> </span> </button>
+									<button type="button" class="btn btn-secudary navbar-btn" data-toggle="modal" data-target="#registrar"> Registrarse </button>
+								</div>
 							</div>
+							<!-- Navegación por la página -->
+								<div class="col-lg-8 col-lg-offset-0 col-md-4 col-sm-4">
+									<ul class="nav nav-tabs">
+										<li role="presentation" class="active"><a href="main.html"> Inicio </a></li>
+										<li role="presentation"><a href="menu.html"> Menú </a></li>
+										<li role="presentation"><a href="recetas.html"> Recetas </a></li>
+										<li role="presentation"><a href="pedidos.html"> Pedidos </a></li>
+										<li role="presentation"><a href="contacto.html"> Contacto </a></li>
+										<li role="presentation"><a href="cuenta.html"> Cuenta </a></li>
+										<li role="presentation"><a href="somos.html"> ¿Quiénes somos? </a></li>
+										<li role="presentation"><a href="opinion.html"> Deja tu opinión </a></li>
+									</ul>
+								</div>
+							<!-- Final de la navegación -->
 						</div>
-						<div class="col-lg-8 col-lg-offset-0 col-md-4 col-sm-4">
-							<ul class="nav nav-tabs">
-								<li role="presentation" class="active"><a href="main.html"> Inicio </a></li>
-								<li role="presentation"><a href="menu.html"> Menú </a></li>
-								<li role="presentation"><a href="recetas.html"> Recetas </a></li>
-								<li role="presentation"><a href="pedidos.html"> Pedidos </a></li>
-								<li role="presentation"><a href="contacto.html"> Contacto </a></li>
-								<li role="presentation"><a href="cuenta.html"> Cuenta </a></li>
-								<li role="presentation"><a href="somos.html"> ¿Quiénes somos? </a></li>
-								<li role="presentation"><a href="opinion.html"> Deja tu opinión </a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+					</nav>
+				<!-- Final del encabezado -->
 			</header>
 			<div class="main" id="conten-main">
 				<div class="row">
-					<div class="col-lg-10 col-lg-offset-1">
-						<div id="carouselimg" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carouselimg" data-slide-to="0" class="active"> </li>
-								<li data-target="#carouselimg" data-slide-to="1"> </li>
-								<li data-target="#carouselimg" data-slide-to="3"> </li>
-							</ol>
-							<div class="carousel-inner" role="listbox">
-								<div class="item active" height="100px">
-									<div style="text-align:center;">
-										<img src="../Sources/moledeolla.jpg" alt="Plato de Comida" id="fr"/>
+					<div class="col-lg-7 col-lg-offset-1">
+						<!-- Carrousel -->
+							<div id="carouselimg" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselimg" data-slide-to="0" class="active"> </li>
+									<li data-target="#carouselimg" data-slide-to="1"> </li>
+									<li data-target="#carouselimg" data-slide-to="3"> </li>
+								</ol>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active" height="100px">
+										<div style="text-align:center;">
+											<img src="../Sources/moledeolla.jpg" alt="Plato de Comida" id="fr"/>
+										</div>
+										<div class="carousel-caption">
+											<h2> Conoce nuestro menú </h2>
+										</div>
 									</div>
-									<div class="carousel-caption">
-										<h2> Conoce nuestro menú </h2>
+									<div class="item" height="100px">
+										<div style="text-align:center;">
+											<img src="../Sources/pozole.jpg" alt="Plato de Comida" id="fa"/> 
+										</div>
+										<div class="carousel-caption">
+											<h2> Tenemos algunas promociones </h2>
+										</div>
 									</div>
-								</div>
-								<div class="item" height="100px">
-									<div style="text-align:center;">
-										<img src="../Sources/pozole.jpg" alt="Plato de Comida" id="fa"/> 
-									</div>
-									<div class="carousel-caption">
-										<h2> Tenemos algunas promociones </h2>
-									</div>
-								</div>
-								<div class="item" height="100px">
-									<div style="text-align:center;">
-										<img src="../Sources/tampiqueña.jpg" alt="Plato de Comida" id="fn"/>
-									</div>
-									<div class="carousel-caption">
-										<h2> Mira algunas recetas </h2>
+									<div class="item" height="100px">
+										<div style="text-align:center;">
+											<img src="../Sources/tampiqueña.jpg" alt="Plato de Comida" id="fn"/>
+										</div>
+										<div class="carousel-caption">
+											<h2> Mira algunas recetas </h2>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<a class="left carousel-control" href="#carouselimg" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Anterior</span>
-						</a>
-						<a class="right carousel-control" href="#carouselimg" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Siguiente</span>
-						</a>
+						<!-- Final y flechas del carousel -->
+							<a class="left carousel-control" href="#carouselimg" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Anterior</span>
+							</a>
+							<a class="right carousel-control" href="#carouselimg" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Siguiente</span>
+							</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-15 navbar-fixed-bottom">
-				<footer class="text-center" id="top">
-					Hecho en México. Todos los derechos reservados.
-					<br/>
-					Créditos.
-					<br/>
-				</footer>
+				<!-- Comienza pie de la página -->
+					<footer class="text-center" id="top">
+						Hecho en México. Todos los derechos reservados.
+						<br/>
+						<a href="#" data-toggle="modal" data-target="#creditos">Créditos</a>
+						<br/>
+					</footer>
+				<!-- Finaliza el pie de página -->
 			</div>
 		</div>
-		
-		<div class="modal fade" id="iniciar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title" id="myModalLabel">Iniciar Sesión</h3>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-lg-12 col-xs-12">
-								<form class="form-horizontal" method="POST" action="./usuario.php">
-									<div class="form-group">
-										<label for="nomu" class="col-lg-3 control-label">Nombre de Usuario:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" id="nomu" placeholder="Nombre de Usuario" name="nom-usuario" required pattern="^[A-z0-9]{5,10}"/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="con" class="col-lg-3 control-label">Contraseña: </label>
-										<div class="col-lg-9">
-											<input type="password" class="form-control" id="con" placeholder="Contraseña" name="contra" required pattern="^[a-zA-Z0-9_\.\-\@]{8,15}"/>
-										</div>
-									</div>
-									<button class="btn btn-lg btn-block btn-primary" id="entrar" type="submit">Entrar</button>
-								</form>
+		<!-- Créditos -->
+			<div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h3 class="modal-title" id="myModalLabel" align="center"> Créditos </h3>
+						</div>
+						<div class="modal-body">
+							<h4 align="center"> Desarrollo: </h4>
+							<p>
+								García Domínguez Mario Angel <br/>
+								Gomez Leonardo <br/>
+								Martínez Martos Arturo Cesar <br/>
+								Sanchez Perez Ricardo <br/>
+								Trejo RodriguezCabo Gerardo Andrés <br/>
+							</p>
+							<div class="footer" align="center">
+								ENP 6 Antonio Caso <br/>
+								UNAM
 							</div>
 						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal"> Cerrar 
+								<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="modal fade" id="registrar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title" id="myModalLabel">Registrarse </h3>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-lg-12 col-xs-12">
-								<form class="form-horizontal" method="POST" action="./registro_n1.php" >
-									<div class="form-group">
-										<label for="nom" class="col-lg-3 control-label">Nombre Usuario</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" id="usuario" placeholder="Nombre de Usuario"  required pattern="^[a-zA-Z ñáéíóú]{3,15}" name="usuarion"/>
+		<!-- Final de los créditos -->
+		<!-- Despliegue de iniciar sesión -->
+			<div class="modal fade" id="iniciar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h3 class="modal-title" id="myModalLabel">Iniciar Sesión</h3>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-lg-12 col-xs-12">
+									<form class="form-horizontal" method="POST" action="./usuario.php">
+										<div class="form-group">
+											<label for="nomu" class="col-lg-3 control-label">Nombre de Usuario:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" id="nomu" placeholder="Nombre de Usuario" name="nom-usuario" required pattern="^[A-z0-9]{5,10}"/>
+											</div>
 										</div>
-									</div>
-									<div class="form-group">
-										<label for="nom" class="col-lg-3 control-label">Correo Electrónico</label>
-										<div class="input-group">
-											<span class="input-group-addon" id="sizing-addon2">@</span>
-											<input type="text" class="form-control" placeholder="Correo Electrónico" required pattern="^[a-zA-Z0-9_\.\-\@]{8,17}" name="correo"/>
+										<div class="form-group">
+											<label for="con" class="col-lg-3 control-label">Contraseña: </label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" id="con" placeholder="Contraseña" name="contra" required pattern="^[a-zA-Z0-9_\.\-\@]{8,15}"/>
+											</div>
 										</div>
-									</div>
-									<div class="form-group">
-										<label for="con" class="col-lg-3 control-label">Tarjeta de Credito </label>
-										<div class="col-lg-9">
-											<input type="password" class="form-control" id="tarcre" placeholder="Tarjeta deCredito"  required pattern="^[0-9]{16}" name="contra"/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="con" class="col-lg-3 control-label">Contraseña: </label>
-										<div class="col-lg-9">
-											<input type="password" class="form-control" id="contra" placeholder="Contraseña"  required pattern="^[a-zA-Z0-9_\.\-\@]{8,17}" name="contra"/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="cond" class="col-lg-3 control-label">Repetir Contraseña: </label>
-										<div class="col-lg-9">
-											<input type="password" class="form-control" id="sena" placeholder="Contraseña"  required pattern="^[a-zA-Z0-9_\.\-\@]{8,17}" name="sena"/>
-										</div>
-									</div>
-									<button class="btn btn-lg btn-group-justified btn-primary" id="registrarse" type="submit">Registrarse</button>
-								</form>
+										<button class="btn btn-lg btn-block btn-primary" id="entrar" type="submit">Entrar</button>
+									</form>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar
+								<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		<!-- Final de iniciar sesión e inicio del registro -->
+			<div class="modal fade" id="registrar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h3 class="modal-title" id="myModalLabel">Registrarse </h3>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-lg-12 col-xs-12">
+									<form class="form-horizontal" method="POST" action="./registro_n1.php" >
+										<div class="form-group">
+											<label for="nom" class="col-lg-3 control-label">Nombre Usuario</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" id="usuario" placeholder="Nombre de Usuario"  required pattern="^[a-zA-Z ñáéíóú]{3,15}" name="usuarion"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="nom" class="col-lg-3 control-label">Correo Electrónico</label>
+											<div class="input-group">
+												<span class="input-group-addon" id="sizing-addon2">@</span>
+												<input type="text" class="form-control" placeholder="Correo Electrónico" required pattern="^[a-zA-Z0-9_\.\-\@]{8,17}" name="correo"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="con" class="col-lg-3 control-label">Tarjeta de Credito </label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" id="tarcre" placeholder="Tarjeta deCredito"  required pattern="^[0-9]{16}" name="contra"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="con" class="col-lg-3 control-label">Contraseña: </label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" id="contra" placeholder="Contraseña"  required pattern="^[a-zA-Z0-9_\.\-\@]{8,17}" name="contra"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="cond" class="col-lg-3 control-label">Repetir Contraseña: </label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" id="sena" placeholder="Contraseña"  required pattern="^[a-zA-Z0-9_\.\-\@]{8,17}" name="sena"/>
+											</div>
+										</div>
+										<button class="btn btn-lg btn-group-justified btn-primary" id="registrarse" type="submit">Registrarse</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar
+								<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Final de registro y scrips -->
 		<script src="../Documents/jquery.js"></script>
 		<script src="../Documents/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="main.js">

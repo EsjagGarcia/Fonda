@@ -2,12 +2,12 @@ body{
 	position:relative;
 	background-color: #008585;
 	background-size: 10000px 1500px;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 .container{
 	background-color:#F7F7F7;
+	height: 625px;
 }
 
 #top{
@@ -15,11 +15,12 @@ body{
 }
 
 #carrusel{
-	 height:100%;
+	 height:relative;
 }
 
 #conten-main{
-	padding-top:150px;
+	padding-top:100px;
+	height: 200px;
 }
 
 #carruselc{
@@ -27,9 +28,10 @@ body{
 	padding:2%;
 	border-radius:10px;
 	box-shadow:7px 7px grey;
-	height:400px;
+	height:700px;
 }
 
 #carrusel,#fr,#fa,#fn{
-	height:450px;
+	height: 450px;
+	width: 600px;
 }
